@@ -650,7 +650,7 @@ function ContactCard() {
   const links = [
     { label: 'email',    value: 'aryaryan711@gmail.com',  url: 'mailto:aryaryan711@gmail.com', color: G },
     { label: 'github',   value: 'github.com/Aryaraf',     url: 'https://github.com/Aryaraf', color: T2 },
-    { label: 'linkedin', value: '/in/arya-ryan-akbar-fadillah',           url: 'https://www.linkedin.com/in/arya-ryan-akbar-fadillah', color: T2 },
+    { label: 'linkedin', value: '/in/arya-ryan-akbar-fadillah',           url: 'https://www.linkedin.com/in/arya-ryan-akbar-fadillah/', color: T2 },
     { label: 'whatsapp', value: '+62 8956 0771 7000',     url: 'https://wa.me/62895607717000', color: T2 },
   ]
   return (
