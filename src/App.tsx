@@ -645,12 +645,14 @@ function ActivityCard() {
 }
 
 // ─── Contact card ─────────────────────────────────────────────────────────────
+// ─── Contact card ─────────────────────────────────────────────────────────────
 function ContactCard() {
   const links = [
-    { label: 'email',    value: 'aryaryan711@gmail.com',  color: G },
-    { label: 'github',   value: 'github.com/Aryaraf',   color: T2 },
-    { label: 'linkedin', value: '/in/aryaryan',      color: T2 },
-    { label: 'phone',  value: '+62 8956 0771 7000',  color: T2 },
+    // Tambahkan properti 'url' untuk tujuan link sebenarnya
+    { label: 'email',    value: 'aryaryan711@gmail.com',  url: 'mailto:aryaryan711@gmail.com', color: G },
+    { label: 'github',   value: 'github.com/Aryaraf',     url: 'https://github.com/Aryaraf', color: T2 },
+    { label: 'linkedin', value: '/in/aryaryan',           url: 'https://linkedin.com/in/aryaryan', color: T2 },
+    { label: 'whatsapp', value: '+62 8956 0771 7000',     url: 'https://wa.me/62895607717000', color: T2 }, // Langsung buka WA!
   ]
   return (
     <Card id="contact" hover style={{ minHeight: '100%' }}>
@@ -665,13 +667,17 @@ function ContactCard() {
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.58rem', color: T3, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 2 }}>
               {l.label}
             </div>
-            <a href="#" style={{
-              fontFamily: 'var(--font-mono)', fontSize: '0.73rem',
-              color: l.color, textDecoration: 'none',
-              display: 'flex', alignItems: 'center', gap: 6, transition: 'opacity 0.15s',
-            }}
-            onMouseEnter={e => (e.currentTarget.style.opacity = '0.65')}
-            onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+            <a 
+              href={l.url} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              style={{
+                fontFamily: 'var(--font-mono)', fontSize: '0.73rem',
+                color: l.color, textDecoration: 'none',
+                display: 'flex', alignItems: 'center', gap: 6, transition: 'opacity 0.15s',
+              }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = '0.65')}
+              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
             >
               <span style={{ color: T3 }}>→</span>
               {l.value}
