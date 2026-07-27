@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .terminal {
+      fill: #39FF14; /* Warna hijau neon khas terminal */
+      font-family: 'Courier New', monospace;
+      font-size: 75px;
+      font-weight: bold;
+    }
+    .cursor {
+      animation: blink 1.2s step-end infinite; /* Animasi kedap-kedip */
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+  <text x="8" y="75" class="terminal">&gt;<tspan class="cursor">_</tspan></text>
+</svg>
