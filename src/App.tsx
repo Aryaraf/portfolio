@@ -692,9 +692,10 @@ function ContactCard() {
 function CertsCard() {
   const certs = [
     { name: 'MTCNA — MikroTik Certified Network Associate', issuer: 'MikroTik', year: 'Valid', color: '#00A65A' },
-    { name: 'CSCU — Certified Secure Computer User', issuer: 'EC-Council', year: 'Valid', color: '#E4002B' },
+    { name: 'CSCU — Certified Secure Computer User', issuer: 'EC-Council', year: 'Valid', color: '#ffff00' },
     { name: 'Computer Competency Test Certificate', issuer: 'BNSP/SMK', year: 'Valid', color: '#FCC624' },
     { name: 'English Proficiency Certificate', issuer: 'Institution', year: 'Valid', color: '#2496ED' },
+    { name: 'LLM-Based Tools & Gemini API Integration for Data Scientists', issuer: 'Hacktiv8', year: 'Valid', color: '#FF0000' },
   ]
   return (
     <Card hover>
