@@ -313,7 +313,7 @@ function HeroCard() {
                 <span style={{ width: 8, height: 8, borderRadius: '50%', background: G, display: 'block', position: 'relative' }} />
               </span>
               <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.68rem', color: G, letterSpacing: '0.12em' }}>
-                AVAILABLE FOR SENIOR ROLES
+                READY FOR THE NEXT CHALLENGE IN CLOUD & AUTOMATION
               </span>
             </div>
 
